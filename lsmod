@@ -1,0 +1,3 @@
+# lsmod shows all currently kernel loaded modules
+lsmod
+

@@ -1,0 +1,15 @@
+# lsusb lists USB (Universal Serial Bus) devices currently connected to the machine. 
+lsusb
+
+# 00:20.2   
+00[Bus]:20[Device]:2[Port] 
+
+# To show an specific device
+lsusb -d 1701:009d
+
+# To show detailed info about a device
+lsusb -v -d 1791:009d
+
+# To show the current USB mapping as a hieralchical tree
+lsusb -t 
+

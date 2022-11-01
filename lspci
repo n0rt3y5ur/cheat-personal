@@ -1,0 +1,13 @@
+# lspci shows all devices currently connected to the PCI (Peripherical Component Interconnect) bus. 
+lspci
+
+# To see an specific device
+lspci -s 00:00.0 
+
+# To see general information about a device
+lspci -s 00:00.0 -v
+
+# To show kernel drives
+lspci -s 00:00.0 -k
+
+
