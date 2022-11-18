@@ -9,14 +9,25 @@ As a matter of fact, this is my git repo with my cheat personal folder.
 Original repo: https://github.com/cheat/cheat
 
 There are several ways to install cheat. After attempting a snap installation, I've decided to go for the unix-like manual installation (my current distro Ubuntu 20.04.5). Copy-paste the following snippet:
-```
-cd /tmp \
+
+```bash
+  cd /tmp \
   && wget https://github.com/cheat/cheat/releases/download/4.3.3/cheat-linux-amd64.gz \
   && gunzip cheat-linux-amd64.gz \
   && chmod +x cheat-linux-amd64 \
   && sudo mv cheat-linux-amd64 /usr/local/bin/cheat
 ```
 
+Now, to install my personal cheat sheets:
+`
+```bash
+  cd ~/.config/cheat/cheatsheets/personal \
+  && wget https://github.com/n0rt3y5ur/cheat-personal/archive/refs/heads/main.zip && unzip main.zip \
+  && rm main.zip \
+  && mv cheat-personal-main/* .  \
+  && rm -r cheat-personal-main README.md 
+  ```
+  
 ## Start using cheat
 To view a cheatsheet:
 
